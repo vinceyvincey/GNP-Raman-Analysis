@@ -1,0 +1,106 @@
+background:
+
+  model: 
+    type: PolynomialModel
+    order: 4
+    prefix: Background_
+    name: background
+
+main:
+
+  model: 
+    type: LorentzianModel
+    prefix: G_
+    name: peakG
+  setpoints:
+    center_min: 1550
+    center_max: 1590
+    amplitude_min: 1.0e-09
+    sigma_max: 50
+    sigma_min: 0
+
+additional_peaks:
+
+  peak_1:
+    model: 
+      type: LorentzianModel
+      prefix: D_
+      name: peakD
+    setpoints:
+      center_min: 1320
+      center_max: 1380
+      amplitude_min: 1.0e-09
+      sigma_max: 65
+      sigma_min: 0
+  
+  peak_2:
+    model: 
+      type: LorentzianModel
+      prefix: D2_
+      name: peak2D
+    setpoints:
+      center_min: 2680
+      center_max: 2720
+      amplitude_min: 1.0e-09
+      sigma_max: 50
+      sigma_min: 0
+
+  peak_3:
+    model: 
+      type: LorentzianModel
+      prefix: Dp_
+      name: peakDp
+    setpoints:
+      center_min: 1155
+      center_max: 1195
+      amplitude_min: 1.0e-09
+      sigma_max: 100
+      sigma_min: 0
+
+  peak_4:
+    model: 
+      type: LorentzianModel
+      prefix: Dpp_
+      name: peakDpp
+    setpoints:
+      center_min: 1455
+      center_max: 1495
+      amplitude_min: 1.0e-09
+      sigma_max: 100
+      sigma_min: 0
+
+  peak_5:
+    model: 
+      type: LorentzianModel
+      prefix: Dd_
+      name: peakDd
+    setpoints:
+      center_min: 1580
+      center_max: 1620
+      amplitude_min: 1.0e-09
+      sigma_max: 25
+      sigma_min: 0
+
+  peak_6:
+    model: 
+      type: LorentzianModel
+      prefix: D_Ddd_
+      name: peakD_Ddd
+    setpoints:
+      center_min: 2420
+      center_max: 2470
+      amplitude_min: 1.0e-09
+      sigma_max: 100
+      sigma_min: 0
+
+  peak_7:
+    model: 
+      type: LorentzianModel
+      prefix: D_Dd_
+      name: peakD_Dd
+    setpoints:
+      center_min: 2910
+      center_max: 2950
+      amplitude_min: 1.0e-09
+      sigma_max: 100
+      sigma_min: 0
